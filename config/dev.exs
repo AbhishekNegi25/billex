@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :billex, Billex.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "negi",
+  password: nil,
   hostname: "localhost",
-  database: "billex_dev",
+  database: "billex_development",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

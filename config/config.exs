@@ -9,7 +9,12 @@ import Config
 
 config :billex,
   ecto_repos: [Billex.Repo],
-  generators: [timestamp_type: :utc_datetime]
+  generators: [timestamp_type: :utc_datetime],
+  username: "negi",
+  password: nil,
+  database: "billex_development",
+  hostname: "localhost",
+  pool_size: 10
 
 # Configures the endpoint
 config :billex, BillexWeb.Endpoint,
