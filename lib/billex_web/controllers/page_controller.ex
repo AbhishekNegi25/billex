@@ -4,6 +4,7 @@ defmodule BillexWeb.PageController do
   def home(conn, _params) do
     # The home page is often custom made,
     # so skip the default app layout.
-    render(conn, :home, layout: false)
+    pid = self() |> :erlang.pid_to_list() |> to_string()
+    render(conn, :home, process_id: pid)
   end
 end
